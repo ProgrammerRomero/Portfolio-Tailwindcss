@@ -591,7 +591,7 @@
       </div>
     </section>
     <!-- Contact Form -->
-    <section class="relative block py-24 lg:pt-0 bg-gray-900">
+    <form method="POST" class="contact-form relative block py-24 lg:pt-0 bg-gray-900">
       <!-- Container -->
       <div class="container mx-auto px-4" data-aos="fade-in">
         <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
@@ -604,7 +604,7 @@
                 </p>
                 <!-- Name -->
                 <div class="relative w-full mb-3 mt-8">
-                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">
+                  <label class="name block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">
                     Full Name
                   </label
                   ><input
@@ -616,7 +616,7 @@
                 </div>
                 <!-- Email -->
                 <div class="relative w-full mb-3">
-                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">
+                  <label class="email block uppercase text-gray-700 text-xs font-bold mb-2" for="email">
                     Email
                   </label
                   ><input
@@ -628,7 +628,7 @@
                 </div>
                 <!-- Message -->
                 <div class="relative w-full mb-3">
-                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="message">
+                  <label class="message block uppercase text-gray-700 text-xs font-bold mb-2" for="message">
                     Message
                   </label
                   ><textarea
@@ -640,8 +640,8 @@
                 </div>
                 <div class="text-center mt-6">
                   <button
-                    class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                    type="button"
+                    class="button bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                    type="submit"
                     style="transition: all 0.15s ease 0s;"
                   >
                     Send Message
@@ -652,7 +652,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </form>
     <!-- End of Contact Section -->
   </main>
 
@@ -751,6 +751,9 @@
   </footer>
   <!-- End of Footer Section -->
 </body>
+<!-- Send Email https://smtpjs.com/-->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="JS/contact.js"></script>
 <!-- Animate On Scroll Library https://michalsnik.github.io/aos/-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="JS/animate.js"></script>
