@@ -6,9 +6,9 @@ function submitForm(e) {
   e.preventDefault();
 
   // Get input Values
-  let name = document.querySelector(".name").nodeValue;
-  let email = document.querySelector(".email").nodeValue;
-  let message = document.querySelector(".message").nodeValue;
+  let name = document.querySelector(".name").value;
+  let email = document.querySelector(".email").value;
+  let message = document.querySelector(".message").value;
 
   // saveContactInfo(name, email, message);
 
@@ -25,7 +25,7 @@ function sendEmail(name, email, message) {
     Password: "zsrjweidodcpilmv",
     To: 'julianchorom@gmail.com',
     From: 'julianchorom@gmail.com',
-    Subject: `${name} sent you a message`,
+    Subject: `FROM HERO WEBSITE sent you a message (IMPORTANT)`,
     Body: `Name: ${name} <br/> Email ${email} <br/> Message: ${message}`,
   }).then((message) => alert("mail send successfully"))
 }
